@@ -5575,138 +5575,18 @@ let shapes = [
 
 // initialize our map
 var map = L.map('map', {
-    center:[50.9356902,-1.3967523], //center map to jkuat
-    zoom:18 //set the zoom level
+  center:[50.9356902,-1.3967523], //center map to jkuat
+  zoom:18 //set the zoom level
 });
 
 //add openstreet baselayer to the map 
 var OpenStreetMap = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  maxZoom: 21,
-  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+maxZoom: 21,
+attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
 
-let floors = [[],[],[],[],[],[],[],[],[],[]]
 
-
-//var marker = L.marker([50.9356902,-1.3967523]).addTo(map);
-
-//console.log(data[0].polygon.split(",").map(x => x.split(/[ ]+/).map(y=>Number(y))))
-
-L.polygon([[-1.3938561782, 50.9356122024],[-1.3938124303, 50.93567238],[-1.3936939425, 50.9356381869],[-1.3937376904, 50.9355780092],[-1.3938561782, 50.9356122024]]).addTo(map)
-
-let polygons = {}
-
-for(let i = 0; i < shapes.length; i++){
-  if(shapes[i].polygon.length === 0) continue;
-
-  let polygonData = shapes[i].polygon.split(",").map(x => x.split(/[ ]+/).map(y=>Number(y)))
-  for(let j = 0; j < polygonData.length; j++){
-    polygonData[j] = [polygonData[j][1], polygonData[j][0]]
-  }
-
-  //let polygon = L.polygon([[50.9356902,-1.3967523],[1,1],[2,3]]).addTo(map);
-  let polygon = L.polygon(polygonData).addTo(map);
-  //console.log(i, shapes[i], shapes[i].level)
-  if(shapes[i].level) floors[shapes[i].level].push(polygon)
-  //let marker = L.marker([data[i].Latitude, data[i].Longitude]).addTo(map)
-
-  let buildingNumber = shapes[i].building.split("/").at(-1)
-  polygon.bindPopup(`<b>${shapes[i].label}</b><br>Building ${buildingNumber} <br> <a href="${shapes[i].uri}">More information</a>`);
-
-  // console.log(polygons[buildingNumber])
-  // if (polygons[buildingNumber] != undefined) {
-  //   polygons[buildingNumber]
-  // }
-  polygons[buildingNumber] = [polygon, ...(polygons[buildingNumber] ?? [])]
-
-  //console.log(polygon)
-  //let marker = L.marker([data[i].Latitude, data[i].Longitude]).addTo(map)
-  //console.log(marker)
-  //marker.bindPopup(`<b>${data[i]["Building Name"]}</b><br>Building ${data[i]["Building Number"]}`);
-}
-
-function setHighlighted(buildings) {
-  for (let buildingNumber in polygons) {
-    let color = buildings.includes(buildingNumber) ? "#fff900" : "#0e7694"
-
-    for (let polygon of polygons[buildingNumber]) {
-      polygon.setStyle({
-        color: color
-      })
-    }
-  }
-}
-
-fetch("http://127.0.0.1:8000/todaybuildings").then(res => res.json()).then(buildings => {
-  let buildingNumbers = []
-  for (let building of buildings) {
-    buildingNumbers.push(building.number)
-  }
-
-  setHighlighted(buildingNumbers)
-})
-
-
-var baseMaps = {
-  "OpenStreetMap": OpenStreetMap
-};
-
-var overlayMaps = {}
-
-for(let i = 0; i < floors.length; i++){
-  let x = L.layerGroup(floors[i]).addTo(map)
-  overlayMaps[i] = x 
-}
-
-var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
-
-
-for(let i = 0; i < data.length; i++){
-  let marker = L.marker([data[i].Latitude, data[i].Longitude]).addTo(map)
-  let timetable;
-
-  fetch(`http://127.0.0.1:8000/timetable/building/${data[i]["Building Number"]}`, {
-    mode: 'cors',
-    headers: {
-      'Access-Control-Allow-Origin':'*'
-    }
-  }).then((res)=>res.json()).then(
-    json =>{
-      timetable = json
-      // console.log(`http://127.0.0.1:8000/timetable/building/${data[i]["Building Number"]}`, json)
-      let code = "<table><tr><th>name</th><th>room</th><th>duration</th></tr>";
-
-      if(timetable.length === 0){
-        code = "You have no lectures scheduled here..."
-      } else {
-        for(let j = 0; j < timetable.length; j++){
-          code += `<tr> <td>${timetable[j].name}</td> <td>${timetable[j].room}</td> <td>${Number(timetable[j].end) - Number(timetable[j].begin)}</td> </tr>`
-        }
-        code.concat("</table>")
-      }
-
-      // console.log(data[i], code)
-
-      let table = `
-        <b>${data[i]["Building Name"]}</b>
-        <br>Building ${data[i]["Building Number"]}<hr><br><a href="http://id.southampton.ac.uk/building/${data[i]["Building Number"]}">Visit building homepage here</a> 
-        <img src="https://data.southampton.ac.uk/image-archive/buildings/300/${data[i]["Building Number"]}.jpg"> <hr>
-        <br>${code}
-        `
-
-
-
-      marker.bindPopup(
-        table, {
-        maxWidth: "auto"
-      });
-    }
-
-    
-  )
-
-}
 
 
 
@@ -5721,13 +5601,14 @@ const customControl = L.Control.extend({
   onAdd: function (map) {
     // create button
     const btn = L.DomUtil.create("button");
-    btn.title = "";
+    btn.title = "calendaradd";
     btn.textContent = "add your calendar!";
     btn.className = "pooooo";
+    /*
     btn.setAttribute(
       "style",
       "background-color: transparent; width: 30px; height: 30px; border: none; display: flex; cursor: pointer; justify-content: center; font-size: 2rem;"
-    );
+    );*/
 
     // actions on mouseover
     btn.onmouseover = function () {
@@ -5741,19 +5622,151 @@ const customControl = L.Control.extend({
 
     // action when clik on button
     btn.onclick = function () {
-      // add class rotate
-      document.body.classList.add("rotate");
-      // remove class after 4s
-      setTimeout(() => {
-        document.body.classList.remove("rotate");
-      }, 4000);
+      let ical = prompt("Put your ical (*.ical) link here!!! NOW!!!")
+      console.log("aosdijsodij")
+      fetch(`http://127.0.0.1:8000/calendarlink`, {
+        method: "post",
+        headers: {
+           'Accept': 'application/json',
+           'Content-Type': 'application/json'
+        },
+      
+        //make sure to serialize your JSON body
+         body: JSON.stringify({calendar: ical})
+      })
+      .then( (response) => { 
+        
+        let floors = [[],[],[],[],[],[],[],[],[],[]]
+
+
+//var marker = L.marker([50.9356902,-1.3967523]).addTo(map);
+
+//console.log(data[0].polygon.split(",").map(x => x.split(/[ ]+/).map(y=>Number(y))))
+
+L.polygon([[-1.3938561782, 50.9356122024],[-1.3938124303, 50.93567238],[-1.3936939425, 50.9356381869],[-1.3937376904, 50.9355780092],[-1.3938561782, 50.9356122024]]).addTo(map)
+
+let polygons = {}
+
+for(let i = 0; i < shapes.length; i++){
+if(shapes[i].polygon.length === 0) continue;
+
+let polygonData = shapes[i].polygon.split(",").map(x => x.split(/[ ]+/).map(y=>Number(y)))
+for(let j = 0; j < polygonData.length; j++){
+  polygonData[j] = [polygonData[j][1], polygonData[j][0]]
+}
+
+//let polygon = L.polygon([[50.9356902,-1.3967523],[1,1],[2,3]]).addTo(map);
+let polygon = L.polygon(polygonData).addTo(map);
+//console.log(i, shapes[i], shapes[i].level)
+if(shapes[i].level) floors[shapes[i].level].push(polygon)
+//let marker = L.marker([data[i].Latitude, data[i].Longitude]).addTo(map)
+
+let buildingNumber = shapes[i].building.split("/").at(-1)
+polygon.bindPopup(`<b>${shapes[i].label}</b><br>Building ${buildingNumber} <br> <a href="${shapes[i].uri}">More information</a>`);
+
+// console.log(polygons[buildingNumber])
+// if (polygons[buildingNumber] != undefined) {
+//   polygons[buildingNumber]
+// }
+polygons[buildingNumber] = [polygon, ...(polygons[buildingNumber] ?? [])]
+
+//console.log(polygon)
+//let marker = L.marker([data[i].Latitude, data[i].Longitude]).addTo(map)
+//console.log(marker)
+//marker.bindPopup(`<b>${data[i]["Building Name"]}</b><br>Building ${data[i]["Building Number"]}`);
+}
+
+function setHighlighted(buildings) {
+for (let buildingNumber in polygons) {
+  let color = buildings.includes(buildingNumber) ? "#fff900" : "#0e7694"
+
+  for (let polygon of polygons[buildingNumber]) {
+    polygon.setStyle({
+      color: color
+    })
+  }
+}
+}
+
+fetch("http://127.0.0.1:8000/todaybuildings").then(res => res.json()).then(buildings => {
+let buildingNumbers = []
+for (let building of buildings) {
+  buildingNumbers.push(building.number)
+}
+
+setHighlighted(buildingNumbers)
+})
+
+
+var baseMaps = {
+"OpenStreetMap": OpenStreetMap
+};
+
+var overlayMaps = {}
+
+for(let i = 0; i < floors.length; i++){
+let x = L.layerGroup(floors[i]).addTo(map)
+overlayMaps[i] = x 
+}
+
+var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+
+for(let i = 0; i < data.length; i++){
+let marker = L.marker([data[i].Latitude, data[i].Longitude]).addTo(map)
+let timetable;
+
+fetch(`http://127.0.0.1:8000/timetable/building/${data[i]["Building Number"]}`, {
+  mode: 'cors',
+  headers: {
+    'Access-Control-Allow-Origin':'*'
+  }
+}).then((res)=>res.json()).then(
+      json =>{
+        timetable = json
+        // console.log(`http://127.0.0.1:8000/timetable/building/${data[i]["Building Number"]}`, json)
+        let code = "<table><tr><th>name</th><th>room</th><th>duration</th></tr>";
+
+        if(timetable.length === 0){
+          code = "You have no lectures scheduled here..."
+        } else {
+          for(let j = 0; j < timetable.length; j++){
+            code += `<tr> <td>${timetable[j].name}</td> <td>${timetable[j].room}</td> <td>${Number(timetable[j].end) - Number(timetable[j].begin)}</td> </tr>`
+          }
+          code.concat("</table>")
+        }
+
+        // console.log(data[i], code)
+
+        let table = `
+          <b>${data[i]["Building Name"]}</b>
+          <br>Building ${data[i]["Building Number"]}<hr><br><a href="http://id.southampton.ac.uk/building/${data[i]["Building Number"]}">Visit building homepage here</a> 
+          <img src="https://data.southampton.ac.uk/image-archive/buildings/300/${data[i]["Building Number"]}.jpg"> <hr>
+          <br>${code}
+          `
+
+
+
+        marker.bindPopup(
+          table, {
+          maxWidth: "auto"
+        });
+      }
+
+      
+    )
+
+}
+
+
+      });
     };
 
     return btn;
   },
 });
 
+
+
 // adding new button to map controll
 map.addControl(new customControl());
-
-
