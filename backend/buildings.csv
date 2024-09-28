@@ -1,0 +1,294 @@
+Building Number,Building Name,Site Number,Site Name,Latitude,Longitude,Estimated Year of Completion,Residential
+1,Building 1,1,Highfield Campus,50.93772,-1.39609,1965,No
+2,Building 2,1,Highfield Campus,50.93617,-1.39821,1968,No
+2A,Building 2 Annexe,1,Highfield Campus,50.93645,-1.39752,,No
+4,Law,1,Highfield Campus,50.93605,-1.39772,1963,No
+5,Eustice,1,Highfield Campus,50.93558,-1.3948,1939,No
+6,Nuffield Theatre,1,Highfield Campus,50.93596,-1.39719,1964,No
+7,Lanchester,1,Highfield Campus,50.93535,-1.39404,1959,No
+7B,Bin Store near B7,1,Highfield Campus,,,,No
+7C,Engineering Square Cycle Store,1,Highfield Campus,,,,No
+8,A B Woods Laboratory,1,Highfield Campus,50.93655,-1.39476,1989,No
+9,Engineering Workshops,1,Highfield Campus,50.93556,-1.39424,1939 and 1957,No
+13,Tizard,1,Highfield Campus,50.93565,-1.3937,1960,No
+15,Wolfson/Rayleigh,1,Highfield Campus,50.93585,-1.3934,1968 and 1978,No
+16,Building 16,1,Highfield Campus,50.93765,-1.39564,1989,No
+17,R J Mitchell Wind Tunnel,1,Highfield Campus,50.93627,-1.3946,1960,No
+18,Jubilee Sports Complex,1,Highfield Campus,50.9339,-1.39671,2004,No
+19,ISVR,1,Highfield Campus,50.93556,-1.39282,2007,No
+20,High Voltage Laboratory,1,Highfield Campus,50.93694,-1.39508,1991 and 2004,No
+21,Faraday,1,Highfield Campus,50.93515,-1.39323,1963,No
+23,Building 23,1,Highfield Campus,50.93476,-1.39327,,No
+25,EScience Building,1,Highfield Campus,50.93483,-1.39356,1931/1947,No
+26,Building 26,1,Highfield Campus,50.93472,-1.39408,1955,No
+27,Chemistry,1,Highfield Campus,50.93434,-1.39375,1937,No
+28,Froude,1,Highfield Campus,50.93471,-1.39452,1959 and 1966,No
+29,Graham Hills,1,Highfield Campus,50.93402,-1.39407,1960,No
+30,Synthetic Chemistry,1,Highfield Campus,50.93433,-1.39456,1997,No
+31,Hartley Store,1,Highfield Campus,50.93377,-1.39388,,No
+32,EEE Building,1,Highfield Campus,50.93643,-1.39589,2006,No
+33,Estates (Maintenance),1,Highfield Campus,50.93338,-1.39457,1938/1985,No
+34,Education,1,Highfield Campus,50.93451,-1.3953,1948,No
+35,David Kiddle,1,Highfield Campus,50.93383,-1.3945,1938,No
+36,Library (inc. blds 10 12 & 14),1,Highfield Campus,50.93504,-1.39531,1914 (1935/1959/1965/1995),No
+37,George Thomas,1,Highfield Campus,50.93403,-1.39566,1970,No
+38,Staff Social Centre,1,Highfield Campus,50.9354,-1.39743,1960,No
+38M,Staff Club Temporary Toilets (M),1,Highfield Campus,50.93561,-1.39669,,No
+38N,Staff Club Temporary Toilets (F),1,Highfield Campus,50.93572,-1.39672,,No
+38P,West Library Square Marquee,1,Highfield Campus,50.93499,-1.39689,,No
+39,Soton Stat Sci Res Institute,1,Highfield Campus,50.95334,-1.36574,2003,No
+40,West Bld & Staff Social Centre,1,Highfield Campus,50.93495,-1.39752,1939/1948/1956,No
+41,Early Years Centre,1,Highfield Campus,50.93361,-1.39527,1978,No
+42,Students' Union/Refectory,1,Highfield Campus,50.93418,-1.39755,1966,No
+44,Shackleton,1,Highfield Campus,50.93452,-1.39894,1966,No
+44A,Building 44A,1,Highfield Campus,50.93424,-1.39866,,No
+45,Health Profs & Rehab Sciences,1,Highfield Campus,50.9378,-1.39402,1994,No
+46,Physics,1,Highfield Campus,50.93486,-1.39961,1966,No
+48,University Health Centre,1,Highfield Campus,50.93569,-1.39948,1992,No
+52,Turner Sims Concert Hall,1,Highfield Campus,50.93587,-1.3988,1974,No
+53,New Mountbatten,1,Highfield Campus,50.93739,-1.39862,2008,No
+54,Mathematics,1,Highfield Campus,50.93628,-1.39884,1963 & 1965,No
+56,Mathematical Sciences Student Centre,1,Highfield Campus,50.93618,-1.39855,,No
+57,Students' Union Retail Centre,1,Highfield Campus,50.93443,-1.39674,1996,No
+58,Murray,1,Highfield Campus,50.93662,-1.39864,1975,No
+59,New Zepler,1,Highfield Campus,50.93733,-1.39775,1997,No
+59M,Gower Temporary Toilets (M),1,Highfield Campus,50.93722,-1.3966,,No
+59N,Gower Temporary Toilets (F),1,Highfield Campus,50.93725,-1.39661,,No
+59P,Gower Temporary Facility,1,Highfield Campus,50.93743,-1.39667,,No
+60,Gower,1,Highfield Campus,50.93775,-1.39762,1999,Yes
+61,Ship Science Store,1,Highfield Campus,50.9359,-1.39487,,No
+63A,East Side,4,Winchester School of Art,51.06581,-1.309,1965,No
+63F,Administration,4,Winchester School of Art,51.06564,-1.30975,1999,No
+63G,South Building,4,Winchester School of Art,51.06536,-1.3099,,No
+63K,West Side,4,Winchester School of Art,51.06588,-1.31069,,No
+63L,West Side Lecture Theatre,4,Winchester School of Art,51.06638,-1.31024,1996,No
+63M,Winchester Temporary Toilets (M),4,Winchester School of Art,51.0652,-1.30916,,No
+63N,Winchester Temporary Toilets (F),4,Winchester School of Art,51.06523,-1.3093,,No
+63P,Winchester Temporary Facility,4,Winchester School of Art,51.06506,-1.30934,,No
+63Z,WSA Cycle store,4,Winchester School of Art,51.06527,-1.30857,,No
+65,Parkes Bldg,3,Avenue Campus,50.92911,-1.40239,1925 (1996),No
+65A,Archaeology,3,Avenue Campus,50.92879,-1.40306,1960s,No
+65B,Burgess,3,Avenue Campus,50.92884,-1.40363,1960s,No
+65M,Avenue Temporary Toilets (M),3,Avenue Campus,50.92851,-1.40208,,No
+65N,Avenue Temporary Toilets (F),3,Avenue Campus,50.92853,-1.40216,,No
+65P,Avenue Temporary Facility,3,Avenue Campus,50.92833,-1.40236,,No
+67,Nightingale,1,Highfield Campus,50.93674,-1.39658,2000,No
+67M,Nightingale Temporary Toilets (M),1,Highfield Campus,50.93662,-1.39688,,No
+67N,Nightingale Temporary Toilets (F),1,Highfield Campus,50.93661,-1.39697,,No
+67P,Nightingale Temporary Facility,1,Highfield Campus,50.93681,-1.39696,,No
+68,National Oceanography Centre,6,National Oceanography Centre Campus,50.89277,-1.39449,1995,No
+68-A1,National Oceanography Centre - Block A1,6,National Oceanography Centre Campus,50.89244,-1.39319,,No
+68-A6,National Oceanography Centre - Block A6,6,National Oceanography Centre Campus,50.89302,-1.39676,,No
+68-N9,National Oceanography Centre - Block N9,6,National Oceanography Centre Campus,50.89182,-1.39385,,No
+70AA,South Hill A,58,South Hill Hall,50.94162,-1.4025,,Yes
+70BB,South Hill B,58,South Hill Hall,50.94144,-1.40192,,Yes
+70CC,South Hill C,58,South Hill Hall,50.94127,-1.40244,,Yes
+70DD,South Hill Cycle store 1,58,South Hill Hall,50.94127,-1.40281,,Yes
+70EE,South Hill Cycle store 2,58,South Hill Hall,,,,Yes
+72A,Connaught A (Old Quad),63,Connaught Hall,50.93779,-1.37447,,Yes
+72B,Connaught B (Old Quad),63,Connaught Hall,50.93722,-1.37507,,Yes
+72C,Connaught C (Old Quad),63,Connaught Hall,50.93757,-1.37432,,Yes
+72D,Connaught D (Old Quad),63,Connaught Hall,50.93738,-1.37443,,Yes
+72E,Connaught E (Old Quad),63,Connaught Hall,50.93734,-1.37466,,Yes
+72F,Connaught F (Old Quad),63,Connaught Hall,50.93726,-1.37487,,Yes
+72G,Connaught G (Old Quad),63,Connaught Hall,50.93742,-1.3741,,Yes
+72H,Connaught H (Old Quad),63,Connaught Hall,50.93744,-1.37523,,Yes
+72J,Connaught J (New Quad),63,Connaught Hall,50.93755,-1.37532,,Yes
+72K,Connaught K (New Quad),63,Connaught Hall,50.93781,-1.37499,,Yes
+72L,Connaught L (New Quad),63,Connaught Hall,50.93793,-1.37508,,Yes
+72M,Connaught M (New Quad),63,Connaught Hall,50.93845,-1.37549,,Yes
+72N,Connaught N (New Quad),63,Connaught Hall,50.93853,-1.37519,,Yes
+72P,Connaught P (New Quad),63,Connaught Hall,50.93861,-1.37491,,Yes
+72Q,Connaught Q (New Quad),63,Connaught Hall,50.93846,-1.37457,,Yes
+72R,Connaught R (New Quad),63,Connaught Hall,50.93818,-1.37437,,Yes
+72S,Connaught S (New Quad),63,Connaught Hall,50.93859,-1.37555,,Yes
+72U,Connaught Hall Cycle store,63,Connaught Hall,50.93801,-1.37565,,Yes
+72V,Connaught Hall/Lobby/Laundry,63,Connaught Hall,50.93796,-1.37494,,Yes
+72W,Connaught Hall Dining Room,63,Connaught Hall,50.93819,-1.37535,,Yes
+72Y,"Connaught Hall, The Bungalow",63,Connaught Hall,50.93744,-1.37409,,Yes
+72Z,Connaught Hall Gym,63,Connaught Hall,50.93721,-1.37508,,Yes
+73A,Glen Eyre Hall Block A Richard Newitt,57,Glen Eyre Hall,50.94338,-1.40295,,Yes
+73B,Glen Eyre Hall Block B Richard Newitt,57,Glen Eyre Hall,50.94341,-1.4033,,Yes
+73B1,Glen Eyre Hall Bungalow 1,57,Glen Eyre Hall,50.94415,-1.40077,,Yes
+73B2,Glen Eyre Hall Bungalow 2,57,Glen Eyre Hall,50.94409,-1.40089,,Yes
+73B3,Glen Eyre Hall Bungalow 3,57,Glen Eyre Hall,50.94405,-1.40098,,Yes
+73B4,Glen Eyre Hall Bungalow 4,57,Glen Eyre Hall,50.94405,-1.40099,,Yes
+73C,Glen Eyre Hall Block C Richard Newitt,57,Glen Eyre Hall,50.94363,-1.40318,,Yes
+73D,Glen Eyre Hall Block D Richard Newitt,57,Glen Eyre Hall,50.94392,-1.40245,,Yes
+73E,Glen Eyre Hall Block E Richard Newitt,57,Glen Eyre Hall,50.94389,-1.40209,,Yes
+73F,Glen Eyre Hall Block F Richard Newitt,57,Glen Eyre Hall,50.94367,-1.40221,,Yes
+73G,Glen Eyre Hall Block G Richard Newitt,57,Glen Eyre Hall,50.94366,-1.40186,,Yes
+73H,Glen Eyre Hall Block H Richard Newitt,57,Glen Eyre Hall,50.9441,-1.40201,,Yes
+73J,Glen Eyre Hall Block J,57,Glen Eyre Hall,50.94393,-1.40148,,Yes
+73K,"Glen Eyre Hall, Chancellor's Court, Selbourne",57,Glen Eyre Hall,50.94335,-1.40079,,Yes
+73L,"Glen Eyre Hall, Chancellor's Court, Jellicoe",57,Glen Eyre Hall,50.94379,-1.40044,,Yes
+73M,"Glen Eyre Hall, Chancellor's Court, Roll",57,Glen Eyre Hall,50.9438,-1.39967,,Yes
+73N-A,Block A Glen Eyre Hall Old Terrace,57,Glen Eyre Hall,50.94262,-1.40302,,Yes
+73N-B,Block B Glen Eyre Hall Old Terrace,57,Glen Eyre Hall,50.94258,-1.40295,,Yes
+73N-C,Block C Glen Eyre Hall Old Terrace,57,Glen Eyre Hall,50.94254,-1.40288,,Yes
+73N-D,Block D Glen Eyre Hall Old Terrace,57,Glen Eyre Hall,50.9425,-1.40281,,Yes
+73N-E,Block E Glen Eyre Hall Old Terrace,57,Glen Eyre Hall,50.94245,-1.40273,,Yes
+73N-F,Block F Glen Eyre Hall Old Terrace,57,Glen Eyre Hall,50.94242,-1.40267,,Yes
+73N-G,Block G Glen Eyre Hall Old Terrace,57,Glen Eyre Hall,50.94238,-1.4026,,Yes
+73N-H,Block H Glen Eyre Hall Old Terrace,57,Glen Eyre Hall,50.94233,-1.40252,,Yes
+73N-J,Block J Glen Eyre Hall Old Terrace,57,Glen Eyre Hall,50.94229,-1.40246,,Yes
+73N-K,Block K Glen Eyre Hall Old Terrace,57,Glen Eyre Hall,50.94262,-1.4028,,Yes
+73N-Z,Glen Eyre Old Terrace cycle store,57,Glen Eyre Hall,50.94266,-1.40308,,Yes
+73Q1,Glen Eyre Hall Main Building,57,Glen Eyre Hall,50.94396,-1.40297,,Yes
+73Q2,Glen Eyre Hall Dining Hall,57,Glen Eyre Hall,50.94385,-1.40287,,Yes
+73R,Beechmount House,61,Beechmount,50.94345,-1.40463,,Yes
+73S,Glen Eyre Hall Squash Court,57,Glen Eyre Hall,50.94411,-1.40133,,Yes
+73T,Glen Eyre Hall Brunei House,57,Glen Eyre Hall,50.94316,-1.39938,,Yes
+73W,Glen Eyre Hall Block W Richard Newitt,57,Glen Eyre Hall,50.94319,-1.40307,,Yes
+73X-Q,Block Q Glen Eyre Hall New Terrace,57,Glen Eyre Hall,50.94298,-1.40266,,Yes
+73X-R,Block R Glen Eyre Hall New Terrace,57,Glen Eyre Hall,50.94292,-1.40231,,Yes
+73X-S,Block S Glen Eyre Hall New Terrace,57,Glen Eyre Hall,50.94273,-1.40215,,Yes
+73X-T,Block T Glen Eyre Hall New Terrace,57,Glen Eyre Hall,50.9425,-1.40216,,Yes
+73Y,Glen Eyre Fitness suite Cycle store,57,Glen Eyre Hall,50.9442,-1.40148,,Yes
+73Z,Glen Eyre Laundry,57,Glen Eyre Hall,50.94412,-1.40128,,Yes
+75A,"Highfield Hall, Aubrey House",56,Highfield Hall,50.92992,-1.40177,,Yes
+75B,"Highfield Hall, Laundry",56,Highfield Hall,50.92976,-1.40173,,Yes
+75C,"Highfield Hall, Wolfe House",56,Highfield Hall,50.93024,-1.40268,,Yes
+76A,Montefiore Hall Block A,64,Montefiore Hall,50.93733,-1.37838,,Yes
+76B,Montefiore Hall Block B,64,Montefiore Hall,50.93765,-1.37778,,Yes
+76C,Montefiore Hall Block C,64,Montefiore Hall,50.93766,-1.37705,,Yes
+76D,Montefiore Hall Block D,64,Montefiore Hall,50.93773,-1.3767,,Yes
+76E,Montefiore Hall Block E,64,Montefiore Hall,50.93786,-1.37615,,Yes
+76F,Montefiore Hall Block F,64,Montefiore Hall,50.93803,-1.37728,,Yes
+76G,Montefiore Hall Block G,64,Montefiore Hall,50.93811,-1.37693,,Yes
+76H,Montefiore Hall Block H,64,Montefiore Hall,50.93823,-1.37633,,Yes
+76J,Montefiore Hall Block J,64,Montefiore Hall,50.93833,-1.37753,,Yes
+76K,Montefiore Hall Block K,64,Montefiore Hall,50.93847,-1.37688,,Yes
+76L,Montefiore Hall Block L,64,Montefiore Hall,50.93862,-1.37628,,Yes
+76M,Montefiore Hall Block M,64,Montefiore Hall,50.9386,-1.37734,,Yes
+76N,Montefiore Hall Block N,64,Montefiore Hall,50.93876,-1.37672,,Yes
+76P,Montefiore Hall Block P,64,Montefiore Hall,50.93886,-1.37716,,Yes
+76Q,Montefiore Hall Block Q,64,Montefiore Hall,50.93902,-1.37651,,Yes
+76R,Montefiore Hall Block R,64,Montefiore Hall,50.93914,-1.37695,,Yes
+76S,Montefiore Hall Block S,64,Montefiore Hall,50.93927,-1.37632,,Yes
+76SC,Montefiore Hall Social Centre,64,Montefiore Hall,50.93805,-1.37806,,Yes
+76T,Montefiore Hall Block T,64,Montefiore Hall,50.93941,-1.37677,,Yes
+76U,Montefiore Hall Laundry,64,Montefiore Hall,50.93832,-1.37807,,Yes
+76V,Montefiore Hall Block V,64,Montefiore Hall,50.93755,-1.37812,,Yes
+76W,Montefiore Hall Block W,64,Montefiore Hall,50.93728,-1.37797,,Yes
+76X,Montefiore Hall Block X,64,Montefiore Hall,50.937,-1.37845,,Yes
+76Y,Montefiore Cycle Store,65,Stoneham Hall,50.93713,-1.37798,,Yes
+76Z,Montefiore Hall - Reception,64,Montefiore Hall,50.93745,-1.37697,,Yes
+79A,Hartley Grove A,60,Hartley Grove,50.94086,-1.40241,,Yes
+79B,Hartley Grove B,60,Hartley Grove,50.94042,-1.40188,,Yes
+79C,Hartley Grove C,60,Hartley Grove,50.94062,-1.40137,,Yes
+82A,Gateley Hall,67,Gateley,50.917,-1.40758,,Yes
+82B,Romero Hall,68,Romero,50.91574,-1.40977,,Yes
+85,Life Sciences,1,Highfield Campus,50.93645,-1.39534,2010,No
+89,Chilworth Laboratories,5,The University of Southampton Science Park,50.96172,-1.42402,,No
+92,Alpha House,5,The University of Southampton Science Park,50.96212,-1.42543,,No
+93,New Sports Pavilion Wide Lane,39,Recreation Facilities at Wide Lane,50.952265,-1.363419,,No
+94A,Boat House 1,8,Boat House,50.9345,-1.38,,No
+94B,Boat House 2,8,Boat House,50.9346,-1.38006,,No
+94C,Westsuit Drying/Store,8,Boat House,50.93419,-1.38055,,No
+94F,Boat House Changing Rooms,8,Boat House,50.93419,-1.38055,,No
+94H,Classroom,8,Boat House,50.93419,-1.38055,,No
+95,Old Sports Pavilion Wide Lane,39,Recreation Facilities at Wide Lane,50.94972,-1.36657,,No
+100,Centenary Building,1,Highfield Campus,50.93683,-1.39771,,No
+115,Interchange Kiosk,1,Highfield Campus,50.93619,-1.39691,,No
+123,College Keep,,,50.89844,-1.39683,,No
+125,Gamma House,5,The University of Southampton Science Park,50.96145,-1.42521,,No
+126,Unit 2 The Print Centre,12,Itchen House,,,,No
+128,Beta House,5,The University of Southampton Science Park,50.96193404,-1.42629585,,No
+135,Sir James Matthews Building,,,,,,No
+146,Mayflower A,81,Mayflower Halls,50.90861,-1.40881,,Yes
+147,Mayflower B,81,Mayflower Halls,50.90823,-1.40958,,Yes
+148,Mayflower C,81,Mayflower Halls,50.9087,-1.40963,,Yes
+161,Studio 144,,,50.90777964,-1.404256174,,No
+162,1 Guildhall Square,,,50.90759,-1.40508,,No
+168,City Gateway A,80,City Gateway,50.94,-1.37864,,Yes
+169,City Gateway B,80,City Gateway,50.94007,-1.37836,,Yes
+170,City Gateway C,80,City Gateway,50.94012,-1.37807,,Yes
+171,City Gateway D,80,City Gateway,50.93996,-1.37804,,Yes
+176,Building 176,2,Boldrewood Campus,50.93667,-1.40466,,No
+176L,Building 176 Link,2,Boldrewood Campus,50.9367,-1.40505,,No
+177,Building 177,2,Boldrewood Campus,50.93693,-1.40396,,No
+178,Building 178,2,Boldrewood Campus,50.93742,-1.40415,,No
+185,Building 185,2,Boldrewood Campus,50.93768,-1.40505,,No
+190,Boldrewood Cycle Store,2,Boldrewood Campus,50.93681,-1.40418,,No
+193,USMC Building 1,10,University of Southampton Malaysia Campus,1.42987,103.6122,,No
+200,Chamberlain Hall Block A,59,Chamberlain Hall,50.94192,-1.40344,,Yes
+201,Chamberlain Hall Block B,59,Chamberlain Hall,50.94186,-1.4031,,Yes
+202,Chamberlain Hall Block C,59,Chamberlain Hall,50.9415,-1.40309,,Yes
+203,Chamberlain Hall Block D,59,Chamberlain Hall,50.94121,-1.40334,,Yes
+204,Chamberlain Hall Block E,59,Chamberlain Hall,50.9414,-1.40356,,Yes
+211,Chamberlain Hall Cycle Store,59,Chamberlain Hall,,,,No
+1050,26 University Road,1,Highfield Campus,50.93331,-1.39535,,No
+1051,28 University Road,1,Highfield Campus,50.93321,-1.39528,,No
+1101,31 University Road,1,Highfield Campus,50.93306,-1.39587,,No
+1102,39 University Road,1,Highfield Campus,50.93334,-1.39597,,No
+1104,41 University Road,1,Highfield Campus,50.93344,-1.39601,,No
+1105,43 University Road,1,Highfield Campus,50.93351,-1.39611,,No
+1106,45 University Road,1,Highfield Campus,50.93358,-1.39617,,No
+1107,47 University Road,1,Highfield Campus,50.93363,-1.39619,,No
+1310,16 Highfield Road (HUMANITIES RESEARCH STUS),3,Avenue Campus,50.92908,-1.40352,,No
+1419,44 Chamberlain Road (PSYCHOLOGY),1,Highfield Campus,50.93382,-1.39948,,No
+1420,46 Chamberlain Road S/UNION,1,Highfield Campus,50.93385,-1.39954,,No
+1603,34 Bassett Crescent East,2,Boldrewood Campus,50.93803,-1.40326,,No
+1604,Bassett House,40,Bassett House,50.94257,-1.40387,,No
+1730,Erasmus Park,70,Erasmus Park,51.06793,-1.30042,,Yes
+1730-01,Erasmus - House 01,70,Erasmus Park,51.06799,-1.30044,,Yes
+1730-02,Erasmus - House 02,70,Erasmus Park,51.06804,-1.30049,,Yes
+1730-03,Erasmus - House 03,70,Erasmus Park,51.06817,-1.30049,,Yes
+1730-04,Erasmus - House 04,70,Erasmus Park,51.0682,-1.30049,,Yes
+1730-05,Erasmus - House 05,70,Erasmus Park,51.06883,-1.30048,,Yes
+1730-06,Erasmus - House 06,70,Erasmus Park,51.06826,-1.30048,,Yes
+1730-07,Erasmus - House 07,70,Erasmus Park,51.06829,-1.30049,,Yes
+1730-08,Erasmus - House 08,70,Erasmus Park,51.06833,-1.30049,,Yes
+1730-09,Erasmus - House 09,70,Erasmus Park,51.06839,-1.30049,,Yes
+1730-10,Erasmus - House 10,70,Erasmus Park,51.06846,-1.30046,,Yes
+1730-11,Erasmus - House 11,70,Erasmus Park,51.06852,-1.30044,,Yes
+1730-12,Erasmus - House 12,70,Erasmus Park,51.06857,-1.30043,,Yes
+1730-13,Erasmus - House 13,70,Erasmus Park,51.06862,-1.3004,,Yes
+1730-14,Erasmus - House 14,70,Erasmus Park,51.06866,-1.30039,,Yes
+1730-15,Erasmus - House 15,70,Erasmus Park,51.06871,-1.30036,,Yes
+1730-16,Erasmus - House 16,70,Erasmus Park,51.06877,-1.30035,,Yes
+1730-17,Erasmus - House 17,70,Erasmus Park,51.06887,-1.30029,,Yes
+1730-18,Erasmus - House 18,70,Erasmus Park,51.06887,-1.30029,,Yes
+1730-19,Erasmus - Flat 19,70,Erasmus Park,51.06882,-1.30005,,Yes
+1730-20,Erasmus - Flat 20,70,Erasmus Park,51.06888,-1.30003,,Yes
+1730-21,Erasmus - Flat 21,70,Erasmus Park,51.06891,-1.30002,,Yes
+1730-22,Erasmus - Flat 22,70,Erasmus Park,51.06895,-1.30001,,Yes
+1730-23,Erasmus - Flat 23,70,Erasmus Park,51.06899,-1.30001,,Yes
+1730-24,Erasmus - Flat 24,70,Erasmus Park,51.06906,-1.29995,,Yes
+1730-25,Erasmus - Flat 25,70,Erasmus Park,51.06911,-1.29994,,Yes
+1730-26,Erasmus - Flat 26,70,Erasmus Park,51.06913,-1.29993,,Yes
+1730-27,Erasmus - Flat 27,70,Erasmus Park,51.06917,-1.2999,,Yes
+1730-28,Erasmus - Flat 28,70,Erasmus Park,51.06921,-1.29989,,Yes
+1730-29,Erasmus - Flat 29,70,Erasmus Park,51.06924,-1.29987,,Yes
+1730-30,Erasmus - Flat 30,70,Erasmus Park,51.06929,-1.29986,,Yes
+1730-31,Erasmus - Flat 31,70,Erasmus Park,51.06933,-1.29985,,Yes
+1730-32,Erasmus - Flat 32,70,Erasmus Park,51.06933,-1.29984,,Yes
+1730-33,Erasmus - Flat 33,70,Erasmus Park,51.06936,-1.2998,,Yes
+1730-34,Erasmus - Flat 34,70,Erasmus Park,51.06939,-1.29979,,Yes
+1730-35,Erasmus - Flat 35,70,Erasmus Park,51.06941,-1.29978,,Yes
+1730-36,Erasmus - Flat 36,70,Erasmus Park,51.06944,-1.29977,,Yes
+1730-37,Erasmus - Flat 37,70,Erasmus Park,51.06946,-1.29976,,Yes
+1730-38,Erasmus - Flat 38,70,Erasmus Park,51.0695,-1.29974,,Yes
+1730-39,Erasmus - Flat 39,70,Erasmus Park,51.06953,-1.29973,,Yes
+1730-40,Erasmus - Flat 40,70,Erasmus Park,51.06957,-1.29972,,Yes
+1730-41,Erasmus - Flat 41,70,Erasmus Park,51.0696,-1.29969,,Yes
+1730-42,Erasmus - Flat 42,70,Erasmus Park,51.06962,-1.29966,,Yes
+9011,Changing Room 1 Wide Lane,39,Recreation Facilities at Wide Lane,50.95056,-1.36537,,No
+9012,Changing Room 2 Wide Lane,39,Recreation Facilities at Wide Lane,50.95056,-1.36537,,No
+9019,Plumbers' Store behind B35,1,Highfield Campus,,,,No
+9500,South Academic Block,18,Southampton General Hospital,50.93236,-1.43644,,No
+9510,Lab & Path Block,18,Southampton General Hospital,50.93282,-1.4358,,No
+9520,West Wing,18,Southampton General Hospital,50.9337,-1.43556,,No
+9530,Centre Block,18,Southampton General Hospital,50.93325,-1.43439,,No
+9545,National Blood Service Buildng,18,Southampton General Hospital,,,,No
+9550,P/Anne Maternity Unit,18,Southampton General Hospital,50.93534,-1.43491,,No
+9555,IDS,18,Southampton General Hospital,50.93407,-1.43408,,No
+9560,Duthie,18,Southampton General Hospital,50.93439,-1.43434,,No
+9570,Tenovus,18,Southampton General Hospital,50.93457,-1.4338,,No
+9575,Southampton Centre for Cancer Immunology,18,Southampton General Hospital,50.93416909,-1.434820014,,No
+9580,Somers Cancer Research,18,Southampton General Hospital,50.93431,-1.43356,,No
+9581,MRC Building,18,Southampton General Hospital,,,,No
+9590,Aldermoor Health Centre,19,Aldermoor,50.94033,-1.4278,,No
+9594,"St Mary's Hospital IOW, Recption & Education Block",24,"St. Mary's Hospital, Isle of Wight",50.71135,-1.30059,,No
+9596,"St Mary's Hospital IOW, Admin Cottage",24,"St. Mary's Hospital, Isle of Wight",,,,No
