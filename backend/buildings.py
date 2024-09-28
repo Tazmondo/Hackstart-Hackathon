@@ -15,5 +15,5 @@ with open("buildings.csv", "r") as f:
         except ValueError:
             pass
 
-def get_buildings():
+def get_buildings() -> dict[str, Building]:
     return buildings
