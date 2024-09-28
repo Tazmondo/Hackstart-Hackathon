@@ -18,7 +18,8 @@ app.add_middleware(
     allow_headers = ["*"]
 )
 
-
+class thing(BaseModel):
+    calendar: str
 
 
 
@@ -27,8 +28,8 @@ def read_root():
     return {"Hello": "World"}
 
 @app.post("/calendarlink")
-def post_calendar(url: str):
-    ImportCalanderFromLink(url)
+def post_calendar(url: thing):
+    ImportCalanderFromLink(url.calendar)
     return True
 
 @app.get("/buildings")

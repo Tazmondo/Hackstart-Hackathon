@@ -5595,6 +5595,8 @@ let floors = [[],[],[],[],[],[],[],[],[],[]]
 
 L.polygon([[-1.3938561782, 50.9356122024],[-1.3938124303, 50.93567238],[-1.3936939425, 50.9356381869],[-1.3937376904, 50.9355780092],[-1.3938561782, 50.9356122024]]).addTo(map)
 
+let polygons = {}
+
 for(let i = 0; i < shapes.length; i++){
   if(shapes[i].polygon.length === 0) continue;
 
@@ -5608,13 +5610,43 @@ for(let i = 0; i < shapes.length; i++){
   //console.log(i, shapes[i], shapes[i].level)
   if(shapes[i].level) floors[shapes[i].level].push(polygon)
   //let marker = L.marker([data[i].Latitude, data[i].Longitude]).addTo(map)
-  polygon.bindPopup(`<b>${shapes[i].label}</b><br>Building ${shapes[i].building.split("/").at(-1)} <br> <a href="${shapes[i].uri}">More information</a>`);
+
+  let buildingNumber = shapes[i].building.split("/").at(-1)
+  polygon.bindPopup(`<b>${shapes[i].label}</b><br>Building ${buildingNumber} <br> <a href="${shapes[i].uri}">More information</a>`);
+
+  // console.log(polygons[buildingNumber])
+  // if (polygons[buildingNumber] != undefined) {
+  //   polygons[buildingNumber]
+  // }
+  polygons[buildingNumber] = [polygon, ...(polygons[buildingNumber] ?? [])]
 
   //console.log(polygon)
   //let marker = L.marker([data[i].Latitude, data[i].Longitude]).addTo(map)
   //console.log(marker)
   //marker.bindPopup(`<b>${data[i]["Building Name"]}</b><br>Building ${data[i]["Building Number"]}`);
 }
+
+function setHighlighted(buildings) {
+  for (let buildingNumber in polygons) {
+    let color = buildings.includes(buildingNumber) ? "#fff900" : "#0e7694"
+
+    for (let polygon of polygons[buildingNumber]) {
+      polygon.setStyle({
+        color: color
+      })
+    }
+  }
+}
+
+fetch("http://127.0.0.1:8000/todaybuildings").then(res => res.json()).then(buildings => {
+  let buildingNumbers = []
+  for (let building of buildings) {
+    buildingNumbers.push(building.number)
+  }
+
+  setHighlighted(buildingNumbers)
+})
+
 
 var baseMaps = {
   "OpenStreetMap": OpenStreetMap
@@ -5642,7 +5674,7 @@ for(let i = 0; i < data.length; i++){
   }).then((res)=>res.json()).then(
     json =>{
       timetable = json
-      console.log(`http://127.0.0.1:8000/timetable/building/${data[i]["Building Number"]}`, json)
+      // console.log(`http://127.0.0.1:8000/timetable/building/${data[i]["Building Number"]}`, json)
       let code = "<table><tr><th>name</th><th>room</th><th>duration</th></tr>";
 
       if(timetable.length === 0){
@@ -5654,7 +5686,7 @@ for(let i = 0; i < data.length; i++){
         code.concat("</table>")
       }
 
-      console.log(data[i], code)
+      // console.log(data[i], code)
 
       let table = `
         <b>${data[i]["Building Name"]}</b>
@@ -5674,10 +5706,54 @@ for(let i = 0; i < data.length; i++){
     
   )
 
-  
-
-
-
-
 }
+
+
+
+// create custom button
+const customControl = L.Control.extend({
+  // button position
+  options: {
+    position: "topright",
+  },
+
+  // method
+  onAdd: function (map) {
+    // create button
+    const btn = L.DomUtil.create("button");
+    btn.title = "";
+    btn.textContent = "add your calendar!";
+    btn.className = "pooooo";
+    btn.setAttribute(
+      "style",
+      "background-color: transparent; width: 30px; height: 30px; border: none; display: flex; cursor: pointer; justify-content: center; font-size: 2rem;"
+    );
+
+    // actions on mouseover
+    btn.onmouseover = function () {
+      this.style.transform = "scale(1.3)";
+    };
+
+    // actions on mouseout
+    btn.onmouseout = function () {
+      this.style.transform = "scale(1)";
+    };
+
+    // action when clik on button
+    btn.onclick = function () {
+      // add class rotate
+      document.body.classList.add("rotate");
+      // remove class after 4s
+      setTimeout(() => {
+        document.body.classList.remove("rotate");
+      }, 4000);
+    };
+
+    return btn;
+  },
+});
+
+// adding new button to map controll
+map.addControl(new customControl());
+
 

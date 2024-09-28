@@ -94,7 +94,14 @@ def GetLecturesToday():
         if x.begin.datetime.year == now.year and x.begin.datetime.month == now.month and x.begin.datetime.day == now.day:
             TodaysLectures.append(x)
     return TodaysLectures
-    
+
+def GetLecturesForDate(timestamp: int):
+    day = datetime.fromtimestamp(timestamp)
+    TodaysLectures = []
+    for x in events:
+        if x.begin.datetime.year == day.year and x.begin.datetime.month == day.month and x.begin.datetime.day == day.day:
+            TodaysLectures.append(x)
+    return TodaysLectures
     
 def GetTodaysBuildings() -> list[Building]:
     todays_lectures = GetLecturesToday()
@@ -111,5 +118,41 @@ def GetTodaysBuildings() -> list[Building]:
         
         todays_buildings.append(building)
     return todays_buildings
+
+def GetCoordsOfPathBetweenBuildings():
+    url = "https://graphhopper.com/api/1/route"
+
+    query = {
+    "profile": "foot",
+    "point": "string",
+    "point_hint": "string",
+    "snap_prevention": "string",
+    "curbside": "any",
+    "locale": "en",
+    "elevation": "false",
+    "details": "string",
+    "optimize": "false",
+    "instructions": "true",
+    "calc_points": "true",
+    "debug": "false",
+    "points_encoded": "true",
+    "ch.disable": "false",
+    "heading": "0",
+    "heading_penalty": "300",
+    "pass_through": "false",
+    "algorithm": "round_trip",
+    "round_trip.distance": "10000",
+    "round_trip.seed": "0",
+    "alternative_route.max_paths": "2",
+    "alternative_route.max_weight_factor": "1.4",
+    "alternative_route.max_share_factor": "0.6",
+    "key": "d9b5518a-081e-4dee-b025-af103674a28a"
+    }
+
+    response = requests.get(url, params=query)
+
+    data = response.json()
+    print(data)
+    
 
 ImportCalanderFromLink("https://timetable.soton.ac.uk/Feed/Index/0_u1pM-A6BasrqTu_091Qi9Vl5jMCkLhC9JC09dY8TVH7_FPZmrl-PX9PTlt0UKwdjIfOBadbanQLrLzUbZhQw2")
